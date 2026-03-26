@@ -14,7 +14,34 @@ color: #fff; /* Define a cor do texto principal */
 width: 100%;
   min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
 }
+/* botão */
+#toggleTema {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #5e00b3;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
 
+/* modo claro */
+body.claro {
+  background: linear-gradient(to top, #d9b3ff 0%, #ffffff 40%);
+  color: #141414;
+}
+
+/* ajustar elementos no claro */
+body.claro img {
+  background: #ddd;
+}
+
+body.claro .usuario {
+  color: #141414;
+}
 main {
   display: flex; /* Usa flexbox para layout */
 
