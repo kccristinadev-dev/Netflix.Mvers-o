@@ -27,6 +27,30 @@ a {
 a:hover {
     color: #b3b3b3;
 }
+.hero {
+    transition: background-image 0.5s ease-in-out;
+    width: 100%;
+}
+.hero {
+    margin-top: 5rem;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px 4%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    max-width: 500px;
+    color: #ccc;
+}
 
 /* Navbar */
 .navbar {
@@ -469,14 +493,15 @@ a:hover {
     }
 
     .slider-title {
-        font-size: 5vw;
+        font-size: 6vw;
+        margin-bottom: 1px;
         line-height: 4.5vw;
     }
-
 
     #main-content, .slider-section{
             max-width: 100%;
             align-items: center;
+            padding: 6px;
                             margin: 0;
 
 }
@@ -485,7 +510,7 @@ a:hover {
 .movie-row {
                 max-width: 100%;
                 margin: 0;
-                height: 230px;
+                height: 235px;
                 overflow-x: auto;
                 align-items: center;
              padding-top: 5px;
@@ -497,13 +522,13 @@ a:hover {
     padding: 10px;
 }
 .progress-value {
-    font-size: 8px;
+    font-size: 10px;
 }
 .movie-card:hover {
     transform: scale(1.1) translateY(-10px);
 }
 .card-details {
-    height: 70px;
+    height: 73px;
          padding: 10px 8px;
          gap: 6px;
      }
@@ -519,12 +544,13 @@ a:hover {
          flex-wrap: wrap;
      }
      .details-tags {
-         display: none; 
+         margin-top: 0;
+         font-size: 1px;
      }
      .movie-card:hover {
          transform: scale(1.15) translateY(-2px); /* Reduz escala para caber melhor */
      }
- 
+
 /* Footer */
 footer {
     padding: 0 4%;
