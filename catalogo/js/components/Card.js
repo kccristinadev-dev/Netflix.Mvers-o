@@ -25,6 +25,7 @@ export function createCard(item) {
     const details = document.createElement('div');
     details.className = 'card-details';
     details.innerHTML = `
+            <h5 class="movie-title">${item.nome}</h5>
         <div class="details-buttons">
             <div class="left-buttons">
                 <button class="btn-icon btn-play-icon"><i class="fas fa-play" style="margin-left:2px;"></i></button>
