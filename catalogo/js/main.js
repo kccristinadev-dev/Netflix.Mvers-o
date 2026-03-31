@@ -5,6 +5,38 @@ import { createCarousel } from './components/Carousel.js';
 
 // Executa o código apenas após todo o conteúdo do DOM ser completamente carregado
 document.addEventListener('DOMContentLoaded', () => {
+    
+    
+    const hero = document.querySelector('.hero');
+const heroTitle = document.querySelector('.hero h1');
+const heroDesc = document.querySelector('.hero p');
+
+let indexHero = 0;
+
+// Junta todos os filmes em um array só
+const allMovies = categories.flatMap(cat => cat.items);
+
+function atualizarHero() {
+    const movie = allMovies[indexHero];
+
+    hero.style.backgroundImage = `
+        linear-gradient(to top, #141414, transparent),
+        url('${movie.img}')
+    `;
+
+    heroTitle.textContent = movie.nome;
+    heroDesc.textContent = "Filme em destaque da plataforma";
+
+    indexHero = (indexHero + 1) % allMovies.length;
+}
+
+// roda uma vez ao carregar
+atualizarHero();
+
+// troca a cada 2 minutos (120000 ms)
+setInterval(atualizarHero, 10000);
+    
+    
     // Obtém o nome do perfil ativo armazenado no localStorage
     const nomePerfil = localStorage.getItem('perfilAtivoNome');
     // Obtém o caminho da imagem do perfil ativo armazenado no localStorage
@@ -37,3 +69,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
