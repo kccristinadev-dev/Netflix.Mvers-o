@@ -545,7 +545,7 @@ a:hover {
      }
      .details-tags {
          margin-top: 0;
-         font-size: 5px;
+         font-size: 3px;
      }
      .movie-card:hover {
          transform: scale(1.15) translateY(-2px); /* Reduz escala para caber melhor */
