@@ -6,7 +6,7 @@
 }
 body {
 background: linear-gradient(to top, #4d0000 0%, #141414 40%);color: #fff; /* Define a cor do texto principal */
-
+  
   font-family: 'Segoe UI', Arial, Helvetica, sans-serif; /* Define a fonte usada no site */
 
   margin: 0; /* Remove a margem padrão do body */
