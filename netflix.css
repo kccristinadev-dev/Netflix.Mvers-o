@@ -43,18 +43,7 @@ main {
   min-height: 100vh; /* Garante altura mínima de 100% da tela */
 }
 /* botão */
-.cabecalho {
-   display: flex;
-   justify-content: space-between; /* Coloca cada elemento em um lado */
-   align-items: center; /* Alinha verticalmente ao centro */
-   width: 100%;
-   padding: 20px; /* Espaçamento interno */
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: 10; /* Garante que fique acima de outros elementos */
- }
- 
+
  
  /* ===== BOTÃO DE TEMA AJUSTADO ===== */
  #toggleTema {
