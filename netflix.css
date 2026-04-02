@@ -15,10 +15,14 @@ width: 100%;
 }
 .logo {
     width: 92px;
+    height: auto; /* Mantém a proporção baseada na largura */
+    max-height: 100%; /* Garante que não ultrapasse os 70px do header */
+    object-fit: contain; /* Ajusta a imagem dentro do espaço sem cortar */
     margin-right: 25px;
-  height: 60px;
     cursor: pointer;
+    display: block; /* Remove espaços vazios estranhos abaixo da imagem */
 }
+
 header {
     position: fixed;
     top: 0;
