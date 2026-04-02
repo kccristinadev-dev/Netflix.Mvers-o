@@ -14,7 +14,7 @@ width: 100%;
   min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
 }
 .logo {
-    width: 92px;
+    width: 95px;
     height: auto; /* Mantém a proporção baseada na largura */
     max-height: 100%; /* Garante que não ultrapasse os 70px do header */
     object-fit: contain; /* Ajusta a imagem dentro do espaço sem cortar */
