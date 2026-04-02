@@ -236,6 +236,208 @@ figcaption {
     width: 150px;
     height: 150px;
   }
+  }  flex-direction: column; /* Organiza os elementos em coluna */
+
+  align-items: center; /* Centraliza os itens horizontalmente */
+
+  justify-content: center; /* Centraliza os itens verticalmente */
+
+  min-height: 100vh; /* Garante altura mínima de 100% da tela */
+}
+/* botão */
+.cabecalho {
+   display: flex;
+   justify-content: space-between; /* Coloca cada elemento em um lado */
+   align-items: center; /* Alinha verticalmente ao centro */
+   width: 100%;
+   padding: 20px; /* Espaçamento interno */
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10; /* Garante que fique acima de outros elementos */
+ }
+ 
+ 
+ /* ===== BOTÃO DE TEMA AJUSTADO ===== */
+ #toggleTema {
+   padding: 10px 10px;
+   border: 1px solid #b8b8b8;
+   border-radius: 8px;
+   background: transparent;
+   color: #fff;
+   cursor: pointer;
+   font-size: 18px;
+   transition: all 0.2s ease;
+ }
+ /* ===== MODO CLARO ===== */
+body.claro {
+background: linear-gradient(to top, #ffb3b3 0%, #ffffff 40%);  color: #141414;
+}
+
+
+/* ajustar elementos no claro */
+body.claro img {
+  background: #ddd;
+}
+body.claro img:hover {
+    box-shadow: 0 2px 4px #797a7a;
+          border: 2px solid #6a0dad;
+
+}
+
+body.claro .usuario {
+  color: #141414;
+}
+
+h1 {
+  letter-spacing: 1px; /* Espaçamento entre letras */
+
+  font-size: 2.5rem; /* Define o tamanho da fonte do título */
+
+  font-weight: bold; /* Deixa o texto em negrito */
+
+  margin-bottom: 2rem; /* Espaço abaixo do título */
+}
+
+section[aria-label="Perfis disponiveis"] {
+  width: 100%; /* Ocupa toda a largura disponível */
+
+  max-width: 600px; /* Limita a largura máxima */
+  display: flex; /* Usa flexbox */
+
+  justify-content: center; /* Centraliza os perfis */
+}
+
+nav.conteiner-usuarios{
+width: 100%;
+
+  gap: 2rem; /* Espaço entre os perfis */
+  justify-content: center; /* garante centralização geral */
+}
+.lista-usuarios {
+  list-style: none; /* tira as bolinhas */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center; /*garante centralização geral */
+}
+
+.lista-usuarios li {
+  display: flex;
+  justify-content: center;
+}
+.usuario {
+  text-decoration: none; /* Remove sublinhado dos links */
+
+  color: #fff; /* Cor do texto dos links */
+
+  transition: transform 0.25s, box-shadow 0.2s; /* Suaviza animações */
+}
+
+figure {
+  margin: 0; /* Remove margem padrão */
+
+  display: flex;
+
+  flex-direction: column; /* Organiza em coluna */
+
+  align-items: center; /* Centraliza itens */
+}
+
+.usuario img {
+  width: 120px; /* Largura fixa da imagem */
+
+  height: 120px; /* Altura fixa da imagem */
+
+  border-radius: 8px; /* Bordas arredondadas */
+
+  object-fit: cover; /* Mantém proporção da imagem */
+
+  margin-bottom: 0.5rem; /* Espaço abaixo da imagem */
+
+  background: #222; /* Cor de fundo da imagem */
+
+  display: block;
+
+  border: 2px solid transparent; /* Borda inicial invisível */
+  transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+  border-color: #fff; /* Borda branca ao passar o mouse */
+  transform: translateY(-5px) scale(1.05);
+}
+
+figcaption {
+  font-size: 1.1rem; /* Tamanho da fonte da legenda */
+
+  font-weight: 500;
+
+  margin-top: 0.5rem; /* Espaço acima da legenda */
+
+  letter-spacing: 0.5px; /* Espaçamento entre letras */
+}
+
+@media (max-width: 750px) {
+    main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* evita o header esmagando */
+}
+        
+  .lista-usuarios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+    .usuario {
+        width: 100%;
+        max-width: 140px; /* controla tamanho */
+    }
+
+    img {
+        width: 140px;
+        height: 140px;
+    }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .lista-usuarios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .lista-usuarios {
+    gap: 1.5rem;
+  }
+
+  img {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (min-width: 1200px) {
+  section[aria-label="Perfis disponiveis"] {
+    max-width: 900px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
   }  background: transparent;
   color: #fff;
   cursor: pointer;
