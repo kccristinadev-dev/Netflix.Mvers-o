@@ -30,8 +30,6 @@ a:hover {
 .hero {
     transition: background-image 0.5s ease-in-out;
     width: 100%;
-}
-.hero {
     margin-top: 5rem;
     height: 60vh;
     display: flex;
@@ -39,6 +37,7 @@ a:hover {
     justify-content: flex-end;
     padding: 60px 4%;
     background-size: cover;
+    align-items: center;
     background-position: center;
     margin-bottom: 2px;
 }
